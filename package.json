@@ -1,0 +1,27 @@
+{
+  "name": "mc-bots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mf-rl/mc-bots.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mf-rl/mc-bots/issues"
+  },
+  "homepage": "https://github.com/mf-rl/mc-bots#readme",
+  "dependencies": {
+    "minecraft-protocol": "github:PrismarineJS/node-minecraft-protocol#pc1_21_10",
+    "mineflayer": "github:PrismarineJS/mineflayer#pc1_21_10",
+    "mineflayer-pathfinder": "^2.4.5",
+    "vec3": "^0.1.10"
+  }
+}
