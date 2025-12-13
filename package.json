@@ -19,9 +19,10 @@
   },
   "homepage": "https://github.com/mf-rl/mc-bots#readme",
   "dependencies": {
-    "minecraft-protocol": "github:PrismarineJS/node-minecraft-protocol#pc1_21_10",
-    "mineflayer": "github:PrismarineJS/mineflayer#pc1_21_10",
+    "minecraft-data": "^3.101.0",
+    "mineflayer": "^4.33.0",
     "mineflayer-pathfinder": "^2.4.5",
+    "mineflayer-pvp": "^1.3.2",
     "vec3": "^0.1.10"
   }
 }
