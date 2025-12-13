@@ -11,7 +11,7 @@ function createBot(username, host, port, sharedState = {}, onFinalEnd = () => {}
     port,
     username,
     hideErrors: true,
-    version: "1.21.10",
+    version: "1.21.1",
     auth: "offline"
   });
 
