@@ -7,9 +7,9 @@ function generateRandomName() {
   return `${adjectives[Math.floor(Math.random()*adjectives.length)]}${nouns[Math.floor(Math.random()*nouns.length)]}${Math.floor(Math.random()*9999)}`;
 }
 
-const MAX_BOTS = 5;
-const SPAWN_MIN = 15000;
-const SPAWN_RANGE = 30000;
+const MAX_BOTS = 3; // Reduced to prevent server overload
+const SPAWN_MIN = 20000; // Increased minimum spawn delay
+const SPAWN_RANGE = 40000; // Increased range for more spacing
 let currentBots = 0;
 
 const sharedState = { bots: [], target: null, lastSeen: 0 };
@@ -26,7 +26,8 @@ function spawnBot() {
     sharedState.bots = sharedState.bots.filter(b=>b.username!==botName);
   });
 
-  const delay = SPAWN_MIN + Math.floor(Math.random()*SPAWN_RANGE) + sharedState.bots.length*1500;
+  const delay = SPAWN_MIN + Math.floor(Math.random()*SPAWN_RANGE) + sharedState.bots.length*3000;
+  console.log(`[Spawner] Next bot in ${Math.round(delay/1000)}s`);
   setTimeout(spawnBot, delay);
 }
 
